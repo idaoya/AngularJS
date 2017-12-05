@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test input</title>
+<script src="js/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="">
+
+		<!-- ng-model directive ซึ่งใช้ผูกค่าต่างๆกับ HTML เพื่อคอนโทร (input, select, textarea) -->
+		Name: <input type="text" ng-model="name">
+
+		<!-- ประกาศ ng-bind directive ซึ่งใช้ผูกข้อมูลเพื่อที่จะแสดงใน HTML  -->
+		<div ng-bind="name"></div>
+
+		<!-- expression -->
+		<p>{{name}}</p>
+
+		<!-- number -->
+		<p>2 + 2 = {{2 + 2}}</p>
+		<p>3 * 2 = {{3 * 2}}</p>
+
+		<!--  Text -->
+		<p>{{"Hello! " + "AngularJS"}} + {{name}}</p>
+
+	</div>
+</body>
+</html>

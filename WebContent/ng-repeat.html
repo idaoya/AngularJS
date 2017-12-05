@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Data Binding</title>
+<script src="js/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="" ng-init="fruit=['mango','banana','apple']">
+		<ul>
+			<li ng-repeat="x in fruit">{{x}}</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Event Click</title>
+<script src="js/angular.min.js"></script>
+</head>
+<body>
+
+	<div ng-app="myApp" ng-controller="myCtrl">
+		<button ng-click="myFunction()">Click</button>
+		<h1>{{count}}</h1>
+	</div>
+
+	<script>
+		var app = angular.module("myApp", []);
+
+		app.controller("myCtrl", function($scope) {
+			$scope.count = 0;
+			$scope.myFunction = function() {
+				$scope.count++;
+			}
+		});
+	</script>
+
+</body>
+</html>

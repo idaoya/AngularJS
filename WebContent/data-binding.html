@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Data Binding</title>
+<script src="js/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="" ng-init="price=50; count=1">
+		Price <input type="text" ng-model="price" disabled> Count <input
+			type="number" ng-model="count"> Total = {{price * count}}
+	</div>
+</body>
+</html>
