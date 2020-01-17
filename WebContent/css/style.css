@@ -1,0 +1,30 @@
+input[type=text], input[type=number], input[type=email], input[type=password], select {
+  width: 100%;
+  padding: 10px 30px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #008040;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 10%;
+  background-color: red;
+  color: white;
+  padding: 14px 30px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #f0f0f0;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #cccccc;
+  padding: 25px;
+}

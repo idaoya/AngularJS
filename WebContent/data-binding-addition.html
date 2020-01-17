@@ -3,13 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Data Binding</title>
+<link href="css/style.css" rel='stylesheet' type='text/css' /> 
 <script src="js/angular.min.js"></script>
 </head>
 <body>
-	<div ng-app="" ng-init="price=10; count=1">
-		Price <input type="text" ng-model="price" disabled> Count <input
-			type="number" ng-model="count"> Total <input type="text"
-			value="{{price + count}}" disabled>
-	</div>
+<div ng-app="" ng-init="price=10; count=1"> Price
+  <input type="text" ng-model="price" disabled>
+  Count
+  <input type="number" ng-model="count">
+  Total
+  <input type="text" value="{{price + count}}" disabled>
+</div>
 </body>
 </html>
